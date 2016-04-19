@@ -25,7 +25,6 @@ return [
             'DataStore\Cashable\CashableStores\Factory\CashableStoreAbstractFactory',
             'zaboy\res\DataStores\Factory\DbTableStoresAbstractFactory',
             'zaboy\res\DataStores\Factory\MemoryStoresAbstractFactory',
-            'zaboy\res\TableGateway\Factory\TableGatewayAbstractFactory',
             'zaboy\res\DataStores\Factory\HttpClientStoresAbstractFactory',
             'Zend\Db\Adapter\AdapterAbstractServiceFactory',
         ]

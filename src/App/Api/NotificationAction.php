@@ -49,6 +49,7 @@ class NotificationAction
     public function __construct($ebayConfig, DataStoresInterface $store)
     {
         $this->ebayConfig = $ebayConfig;
+        $this->store = $store;
     }
 
     public function __invoke(Request $request, Response $response, callable $next)
@@ -59,25 +60,43 @@ class NotificationAction
         $xml = preg_replace('/[\n\r]/', '', $xml);
         $xml = preg_replace('/>\s+/', '>', $xml);
 
-        $rootClass = 'DTS\eBaySDK\Trading\Types\AbstractResponseType';
-        $parser = new XmlParser($rootClass);
+        $rootBodyClass = 'DTS\eBaySDK\Trading\Types\AbstractResponseType';
+        $parserBody = new XmlParser($rootBodyClass);
 
-        $xml = mb_strstr($xml, "<soapenv:Body>", false);
-        $xml = trim($xml, "<soapenv:Body>");
-        $xml = mb_strstr($xml, "<soapenv:Body>", true);
-
+        $body = mb_strstr($xml, "<soapenv:Body>", false);
+        $body = trim($body, "<soapenv:Body>");
+        $body = mb_strstr($body, "</soapenv:Body>", true);
+        $body = '<' . $body;
         /** @var AbstractResponseType $notification */
-        $notification = $parser->parse($xml);
+        $notification = $parserBody->parse($body);
+
+        $notification->NotificationSignature = mb_strstr($xml, '<ebl:NotificationSignature xmlns:ebl="urn:ebay:apis:eBLBaseComponents">', false);
+        $notification->NotificationSignature = trim($notification->NotificationSignature, '<ebl:NotificationSignature xmlns:ebl="urn:ebay:apis:eBLBaseComponents">');
+        $notification->NotificationSignature = mb_strstr($notification->NotificationSignature, "</ebl:NotificationSignature>", true);
+
+        $timestamp = mb_strstr($body, "<Timestamp>", false);
+        $timestamp = trim($timestamp, "<Timestamp>");
+        $timestamp = mb_strstr($timestamp, "</Timestamp>", true);
+
+        if ($this->CalculationSignature($timestamp) !== $notification->NotificationSignature) {
+            throw new \Exception("Not Equalse signature", 403);
+        }
 
         $item = [
-            'add_date' => $notification->Timestamp->format("YY-mm-ddThh:ii:ss"),
+            'add_date' => $notification->Timestamp->format("Y-m-d h:i:s"),
             'soapaction' => $notification->NotificationEventName,
-            'data' => $notification->toRequestXml(),
+            'data' => $body
         ];
 
         $this->store->create($item);
 
+
         return $response->withStatus(200);
     }
+    private function CalculationSignature($timestamp){
+        $signature = base64_encode(pack('H*', md5("{$timestamp}{$this->ebayConfig['credentials']['devId']}{$this->ebayConfig['credentials']['appId']}{$this->ebayConfig['credentials']['certId']}")));
+        return $signature;
+    }
+
 }
 
