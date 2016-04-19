@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Header>
+        <ebl:RequesterCredentials soapenv:mustUnderstand="0" xmlns:ns="urn:ebay:apis:eBLBaseComponents" xmlns:ebl="urn:ebay:apis:eBLBaseComponents">
+            <ebl:NotificationSignature xmlns:ebl="urn:ebay:apis:eBLBaseComponents">FeNpgnNx8X4zE03KrgiT2g==</ebl:NotificationSignature>
+        </ebl:RequesterCredentials>
+    </soapenv:Header>
+    <soapenv:Body>
+        <GetItemResponse xmlns="urn:ebay:apis:eBLBaseComponents">
+            <Timestamp>2016-04-18T11:04:20.927Z</Timestamp>
+            <Ack>Success</Ack>
+            <CorrelationID>661804480</CorrelationID>
+            <Version>937</Version>
+            <Build>E937_CORE_APIMSG_17786298_R1</Build>
+            <NotificationEventName>ItemListed</NotificationEventName>
+            <RecipientUserID>testuser_victorynox</RecipientUserID>
+            <EIASToken>nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wFk4GgCZeCoAWdj6x9nY+seQ==</EIASToken>
+            <Item>
+                <AutoPay>false</AutoPay>
+                <BuyerProtection>ItemIneligible</BuyerProtection>
+                <BuyItNowPrice currencyID="USD">0.0</BuyItNowPrice>
+                <Country>US</Country>
+                <Currency>CAD</Currency>
+                <Description>&amp;nbsp;jnb</Description>
+                <GiftIcon>0</GiftIcon>
+                <HitCounter>RetroStyle</HitCounter>
+                <ItemID>110176916997</ItemID>
+                <ListingDetails>
+                    <Adult>false</Adult>
+                    <BindingAuction>false</BindingAuction>
+                    <CheckoutEnabled>true</CheckoutEnabled>
+                    <ConvertedBuyItNowPrice currencyID="USD">0.0</ConvertedBuyItNowPrice>
+                    <ConvertedStartPrice currencyID="USD">398.01</ConvertedStartPrice>
+                    <ConvertedReservePrice currencyID="USD">0.0</ConvertedReservePrice>
+                    <HasReservePrice>false</HasReservePrice>
+                    <StartTime>2016-04-18T10:54:49.000Z</StartTime>
+                    <EndTime>2016-04-25T10:54:49.000Z</EndTime>
+                    <ViewItemURL>http://cgi.sandbox.ebay.com/Kingston-SSDNow-V300-120GB-Internal-7200RPM-2-5-SV300S37A-120G-SSD-/110176916997</ViewItemURL>
+                    <HasUnansweredQuestions>false</HasUnansweredQuestions>
+                    <HasPublicMessages>false</HasPublicMessages>
+                    <ViewItemURLForNaturalSearch>http://cgi.sandbox.ebay.com/Kingston-SSDNow-V300-120GB-Internal-7200RPM-2-5-SV300S37A-120G-SSD-/110176916997</ViewItemURLForNaturalSearch>
+                </ListingDetails>
+                <ListingDesigner>
+                    <LayoutID>210000</LayoutID>
+                    <ThemeID>210</ThemeID>
+                </ListingDesigner>
+                <ListingDuration>Days_7</ListingDuration>
+                <ListingEnhancement>BoldTitle</ListingEnhancement>
+                <ListingType>FixedPriceItem</ListingType>
+                <Location>city, WA</Location>
+                <PaymentMethods>PayPal</PaymentMethods>
+                <PayPalEmailAddress>ertertre@ewqe.vom</PayPalEmailAddress>
+                <PrimaryCategory>
+                    <CategoryID>175669</CategoryID>
+                    <CategoryName>Computers/Tablets &amp; Networking:Drives, Storage &amp; Blank Media:Hard Drives (HDD, SSD &amp; NAS):Solid State Drives</CategoryName>
+                </PrimaryCategory>
+                <PrivateListing>false</PrivateListing>
+                <ProductListingDetails>
+                    <ProductID>121870:2:1916:1078658419:804432089:d352bb5270e2d789d4e60457ba819d02:1:1:1:5000066834292</ProductID>
+                    <IncludeStockPhotoURL>true</IncludeStockPhotoURL>
+                    <IncludePrefilledItemInformation>true</IncludePrefilledItemInformation>
+                    <UseStockPhotoURLAsGallery>true</UseStockPhotoURLAsGallery>
+                    <StockPhotoURL>http://i.ebayimg.com/00/$T2eC16h,!)UE9s3wEgeYBRd-SpBniQ~~_7.JPG?set_id=89040003C1</StockPhotoURL>
+                    <ProductReferenceID>177940679</ProductReferenceID>
+                    <UPC>740617212662</UPC>
+                    <BrandMPN>
+                        <Brand>Kingston</Brand>
+                        <MPN>SV300S37A/120G</MPN>
+                    </BrandMPN>
+                </ProductListingDetails>
+                <Quantity>1</Quantity>
+                <ReservePrice currencyID="USD">0.0</ReservePrice>
+                <ReviseStatus>
+                    <ItemRevised>false</ItemRevised>
+                </ReviseStatus>
+                <Seller>
+                    <AboutMePage>false</AboutMePage>
+                    <Email>it.professor02@gmail.com</Email>
+                    <FeedbackScore>500</FeedbackScore>
+                    <PositiveFeedbackPercent>0.0</PositiveFeedbackPercent>
+                    <FeedbackPrivate>false</FeedbackPrivate>
+                    <FeedbackRatingStar>Purple</FeedbackRatingStar>
+                    <IDVerified>true</IDVerified>
+                    <eBayGoodStanding>true</eBayGoodStanding>
+                    <NewUser>false</NewUser>
+                    <RegistrationDate>2006-01-01T00:00:00.000Z</RegistrationDate>
+                    <Site>US</Site>
+                    <Status>Confirmed</Status>
+                    <UserID>testuser_victorynox</UserID>
+                    <UserIDChanged>true</UserIDChanged>
+                    <UserIDLastChanged>2016-04-14T13:44:18.000Z</UserIDLastChanged>
+                    <VATStatus>NoVATTax</VATStatus>
+                    <SellerInfo>
+                        <AllowPaymentEdit>true</AllowPaymentEdit>
+                        <CheckoutEnabled>true</CheckoutEnabled>
+                        <CIPBankAccountStored>false</CIPBankAccountStored>
+                        <GoodStanding>true</GoodStanding>
+                        <LiveAuctionAuthorized>false</LiveAuctionAuthorized>
+                        <MerchandizingPref>OptIn</MerchandizingPref>
+                        <QualifiesForB2BVAT>false</QualifiesForB2BVAT>
+                        <StoreOwner>false</StoreOwner>
+                        <SafePaymentExempt>true</SafePaymentExempt>
+                    </SellerInfo>
+                    <MotorsDealer>false</MotorsDealer>
+                </Seller>
+                <SellingStatus>
+                    <BidCount>0</BidCount>
+                    <BidIncrement currencyID="CAD">0.0</BidIncrement>
+                    <ConvertedCurrentPrice currencyID="USD">398.01</ConvertedCurrentPrice>
+                    <CurrentPrice currencyID="CAD">545.0</CurrentPrice>
+                    <LeadCount>0</LeadCount>
+                    <MinimumToBid currencyID="CAD">545.0</MinimumToBid>
+                    <QuantitySold>0</QuantitySold>
+                    <ReserveMet>true</ReserveMet>
+                    <SecondChanceEligible>false</SecondChanceEligible>
+                    <ListingStatus>Active</ListingStatus>
+                    <QuantitySoldByPickupInStore>0</QuantitySoldByPickupInStore>
+                </SellingStatus>
+                <ShippingDetails>
+                    <ApplyShippingDiscount>false</ApplyShippingDiscount>
+                    <SalesTax>
+                        <SalesTaxPercent>0.0</SalesTaxPercent>
+                        <ShippingIncludedInTax>false</ShippingIncludedInTax>
+                    </SalesTax>
+                    <ThirdPartyCheckout>false</ThirdPartyCheckout>
+                    <ShippingDiscountProfileID>0</ShippingDiscountProfileID>
+                    <InternationalShippingDiscountProfileID>0</InternationalShippingDiscountProfileID>
+                    <SellerExcludeShipToLocationsPreference>true</SellerExcludeShipToLocationsPreference>
+                </ShippingDetails>
+                <ShipToLocations>None</ShipToLocations>
+                <Site>Canada</Site>
+                <StartPrice currencyID="CAD">545.0</StartPrice>
+                <SubTitle>22222222222 dsssssssssssssss</SubTitle>
+                <TimeLeft>P6DT23H50M29S</TimeLeft>
+                <Title>Kingston SSDNow V300 120GB,Internal,7200RPM,2.5&quot; (SV300S37A/120G) SSD</Title>
+                <HitCount>0</HitCount>
+                <BestOfferDetails>
+                    <BestOfferCount>0</BestOfferCount>
+                    <BestOfferEnabled>true</BestOfferEnabled>
+                    <NewBestOffer>false</NewBestOffer>
+                </BestOfferDetails>
+                <BuyerResponsibleForShipping>false</BuyerResponsibleForShipping>
+                <PostalCode>98102</PostalCode>
+                <PictureDetails>
+                    <GalleryType>Gallery</GalleryType>
+                    <GalleryURL>http://i.ebayimg.com/00/$T2eC16h,!)UE9s3wEgeYBRd-SpBniQ~~_7.JPG?set_id=89040003C1</GalleryURL>
+                    <PhotoDisplay>None</PhotoDisplay>
+                    <GalleryStatus>ImageProcessingError</GalleryStatus>
+                    <GalleryErrorInfo>We were unable to identify the exact problem with: http://i.ebayimg.com/00/$T2eC16h,!)UE9s3wEgeYBRd-SpBniQ~~_7.JPG?set_id=89040003C1. For information on how to resolve this problem, see the following eBay online help page: http://pages.sandbox.ebay.com/help/sell/fix_gallery.html</GalleryErrorInfo>
+                </PictureDetails>
+                <ProxyItem>false</ProxyItem>
+                <ItemSpecifics>
+                    <NameValueList>
+                        <Name>Brand</Name>
+                        <Value>Kingston</Value>
+                        <Source>Product</Source>
+                    </NameValueList>
+                    <NameValueList>
+                        <Name>Storage Capacity</Name>
+                        <Value>120GB</Value>
+                        <Source>Product</Source>
+                    </NameValueList>
+                    <NameValueList>
+                        <Name>Rotation Speed</Name>
+                        <Value>7200RPM</Value>
+                        <Source>Product</Source>
+                    </NameValueList>
+                    <NameValueList>
+                        <Name>Interface</Name>
+                        <Value>6-Gb/s SATA</Value>
+                        <Source>Product</Source>
+                    </NameValueList>
+                    <NameValueList>
+                        <Name>MPN</Name>
+                        <Value>SV300S37A/120G</Value>
+                        <Source>Product</Source>
+                    </NameValueList>
+                    <NameValueList>
+                        <Name>Model</Name>
+                        <Value>SSDNow V300</Value>
+                        <Source>Product</Source>
+                    </NameValueList>
+                </ItemSpecifics>
+                <BuyerGuaranteePrice currencyID="USD">20000.0</BuyerGuaranteePrice>
+                <IntangibleItem>false</IntangibleItem>
+                <ReturnPolicy>
+                    <ReturnsAcceptedOption>ReturnsNotAccepted</ReturnsAcceptedOption>
+                    <ReturnsAccepted>Returns Not Accepted</ReturnsAccepted>
+                </ReturnPolicy>
+                <PaymentAllowedSite>eBayMotors</PaymentAllowedSite>
+                <PaymentAllowedSite>CanadaFrench</PaymentAllowedSite>
+                <PaymentAllowedSite>Canada</PaymentAllowedSite>
+                <PaymentAllowedSite>US</PaymentAllowedSite>
+                <ConditionID>1000</ConditionID>
+                <ConditionDisplayName>New</ConditionDisplayName>
+                <PostCheckoutExperienceEnabled>false</PostCheckoutExperienceEnabled>
+                <HideFromSearch>false</HideFromSearch>
+                <eBayPlus>false</eBayPlus>
+                <eBayPlusEligible>false</eBayPlusEligible>
+            </Item>
+        </GetItemResponse>
+    </soapenv:Body>
+</soapenv:Envelope>

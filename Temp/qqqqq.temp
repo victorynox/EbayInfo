@@ -1,0 +1,112 @@
+[
+    'AccountSummary',
+    'AccountSuspended',
+    'AddToBidGroup',
+    'AddToWatchList',
+    'AskSellerQuestion',
+    'AuctionCheckoutComplete',
+    'BestOffer',
+    'BestOfferDeclined',
+    'BestOfferPlaced',
+    'BidItemEndingSoon',
+    'BidPlaced',
+    'BidReceived',
+    'BulkDataExchangeJobCompleted',
+    'BuyerCancelRequested',
+    'BuyerResponseDispute',
+    'CheckoutBuyerRequestsTotal',
+    'CounterOfferReceived',
+    'CustomCode',
+    'EBNOrderCanceled',
+    'EBNOrderPickedUp',
+    'EBPAppealedCase',
+    'EBPClosedAppeal',
+    'EBPClosedCase',
+    'EBPEscalatedCase',
+    'EBPMyPaymentDue',
+    'EBPMyResponseDue',
+    'EBPOnHoldCase',
+    'EBPOtherPartyResponseDue',
+    'EBPPaymentDone',
+    'EmailAddressChanged',
+    'EndOfAuction',
+    'Feedback',
+    'FeedbackLeft',
+    'FeedbackReceived',
+    'FeedbackStarChanged',
+    'FixedPriceTransaction',
+    'INRBuyerClosedDispute',
+    'INRBuyerOpenedDispute',
+    'INRBuyerRespondedToDispute',
+    'INRSellerRespondedToDispute',
+    'ItemsCanceled',
+    'ItemAddedToWatchList',
+    'ItemClosed',
+    'ItemExtended',
+    'ItemListed',
+    'ItemLost',
+    'ItemMarkedPaid',
+    'ItemMarkedShipped',
+    'ItemRemovedFromWatchList',
+    'ItemRevised',
+    'ItemRevisedAddCharity',
+    'ItemSold',
+    'ItemSuspended',
+    'ItemUnsold',
+    'ItemWon',
+    'M2MMessageStatusChange',
+    'MyMessageseBayMessage',
+    'MyMessageseBayMessageHeader',
+    'MyMessagesM2MMessage',
+    'MyMessagesM2MMessageHeader',
+    'MyMessagesHighPriorityMessage',
+    'MyMessagesHighPriorityMessageHeader',
+    'None',
+    'OutBid',
+    'PasswordChanged',
+    'PasswordHintChanged',
+    'PaymentDetailChanged',
+    'PaymentReminder',
+    'PlaceOffer',
+    'ReadyForPayout',
+    'ReadyToShip',
+    'RefundFailure',
+    'RefundSuccess',
+    'RemoveFromBidGroup',
+    'RemoveFromWatchList',
+    'ReturnClosed',
+    'ReturnCreated',
+    'ReturnDelivered',
+    'ReturnEscalated',
+    'ReturnRefundOverdue',
+    'ReturnSellerInfoOverdue',
+    'ReturnShipped',
+    'ReturnWaitingForSellerInfo',
+    'SecondChanceOffer',
+    'SellerClosedDispute',
+    'SellerOpenedDispute',
+    'SellerRespondedToDispute',
+    'ShoppingCartItemEndingSoon',
+    'TokenRevocation',
+    'UnmatchedPaymentReceived',
+    'UserIDChanged',
+    'WatchedItemEndingSoon'
+]
+
+[
+AccountSummary
+AccountSuspended
+BuyerCancelRequested
+CustomCode
+EmailAddressChanged
+MyMessageseBayMessageHeader
+MyMessagesHighPriorityMessage
+MyMessagesHighPriorityMessageHeader
+MyMessagesM2MMessage
+MyMessagesM2MMessageHeader
+None
+PasswordChanged
+PasswordHintChanged
+PaymentDetailChanged
+PaymentReminder
+]
